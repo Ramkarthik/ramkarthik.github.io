@@ -1,1 +1,1 @@
-Blog hosted using Github Pages and Jekyll
+Repo for Go Hugo blog which runs at https://kramkarthik.com.
