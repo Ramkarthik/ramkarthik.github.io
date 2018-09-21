@@ -3,6 +3,7 @@ _site
 .jekyll-metadata
 /public
 /themes/minimal/exampleSite
+/themes/minimal
 
 ## OS Files
 # Windows
