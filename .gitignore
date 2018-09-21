@@ -2,3 +2,14 @@ _site
 .sass-cache
 .jekyll-metadata
 /public
+/themes/minimal/exampleSite
+
+## OS Files
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# OSX
+.DS_Store
