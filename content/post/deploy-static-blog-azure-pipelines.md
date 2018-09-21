@@ -28,7 +28,7 @@ Now with Azure Pipelines, you can automate pretty much any deployment process.
 <span>Note: This tutorial assumes that you have your static Hugo website code hosted in a Git repository.</span>
 <p></p>
 <ol>
-	<p><li>Go to [https://dev.azure.com](https://dev.azure.com) and click on 'Create project'.</li></p>
+	<p><li>Go to <a href="https://dev.azure.com" target="_blank">https://dev.azure.com</a> and click on 'Create project'.</li></p>
 	<img style="height:85%;width:85%" src="/images/deploy_azure_pipelines/create_azure_project.png" />
 	<p><li>Click on 'Pipelines' and then in the next screen, click on 'New pipeline'. You will also have a 'Pipelines' option on the left menu.</li></p>
 	<img style="height:85%;width:85%" src="/images/deploy_azure_pipelines/new_azure_project_landing.png" />
@@ -38,9 +38,9 @@ Now with Azure Pipelines, you can automate pretty much any deployment process.
 	<img style="height:85%;width:85%" src="/images/deploy_azure_pipelines/github_oauth.png" />
 	<p><li>Choose your website repository and the branch. I want only commits or merge into 'master' branch to create a build and deploy, so I have chosen 'master' as branch. Click on continue.</li></p>
 	<img style="height:85%;width:85%" src="/images/deploy_azure_pipelines/choose_repository.png" />
-	<p><li>In the next screen, you will asked to choose a template. Scroll all the way down to the end and you will find 'Empty Pipeline'. Let's choose that one.</li></p>
+	<p><li>In the next screen, you will be asked to choose a template. Scroll all the way down to the end and you will find 'Empty Pipeline'. Let's choose that one.</li></p>
 	<img style="height:85%;width:85%" src="/images/deploy_azure_pipelines/choose_empty_pipeline.png" />
-	<p><li>Now we are building a pipeline. You can click on the 'Agent Job 1' under pipeline and rename it. Once you rename it, click on the '+' sign.</li></p>
+	<p><li>Now we are building a pipeline. You can click on 'Agent Job 1' under pipeline and rename it. Once you rename it, click on the '+' sign.</li></p>
 	<img style="height:85%;width:85%" src="/images/deploy_azure_pipelines/build_pipeline.png" />
 	<p><li>You will see a new tab to add a task on the right side. Select 'Marketplace', search for 'Hugo' and click on 'Get it free'. This will install the plugin. Once it is done, click on 'Add'. It will add a new 'Hugo generate' task to your job agent. Click on it.</li></p>
 	<p><img style="height:85%;width:85%" src="/images/deploy_azure_pipelines/marketplace.png" /></p>
@@ -84,10 +84,10 @@ Now with Azure Pipelines, you can automate pretty much any deployment process.
 			<p>Click on OK.</p>
 		</ul></li></p>
 	<p><img style="height:85%;width:85%" src="/images/deploy_azure_pipelines/add_ssh_connection.png" /></p>
-	<p><li>Now in the previous tab, you can choose this SSH connection from the dropdown. Enter 'Target folder' value as the folder path to which you deploy static files in the remote machine. In my case, it is '/var/www/kramkarthik.com/html'.</li></p>
+	<p><li>Now in the previous tab, you can choose this SSH connection from the dropdown. Enter 'Target folder' value as the folder path to which you deploy static files in the remote machine. In my case, it is '/var/www/kramkarthik.com/html'. Click 'Advanced' and enable the checkbox that you need. I usually want to clean the directory and deploy completely. Also, I want the pipeline to fail if there is no file to copy.</li></p>
 	<p><img style="height:85%;width:85%" src="/images/deploy_azure_pipelines/complete_ssh_configuration.png" /></p>
 	<p><li>Change your release pipeline name to something meaningful.</li></p>
-	<p><li>We have a build pipeline. We also have a release pipeline. Now we need to configure what triggers a build and what triggers a deployment.</li></p>
+	<p><li>We have a build pipeline. We also have a release pipeline. Now we need to configure what triggers a build and what triggers a release.</li></p>
 	<p><li>Go to your build pipeline and click on edit.</li></p>
 	<p><img style="height:85%;width:85%" src="/images/deploy_azure_pipelines/build_pipeline_edit.png" /></p>
 	<p><li>Click on 'Triggers'. Choose your repository under 'Continuous Integration' and on the right side menu, choose 'Enable continuous integration'. Click on Save. Now any commit or merge to 'master' branch will trigger a build.</li></p>
