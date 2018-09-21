@@ -10,7 +10,7 @@ In the first episode, <a href="https://twitter.com/abstractsunday">Christoph Nie
 At one point he explains about realism, abstraction and just right. He explains it with the example of illustrating heart. It can be illustrated with complete reality but people would not want to see that. It can be illustrated with just a red square but that would be too abstract. And then there is a middle point - just right - where you show a red heart shape.
 
 <figure>
-    <a href="/images/abstraction.png"><img src="/images/abstraction.png"></a>
+    <a href="/images/abstraction.png"><img style="height:85%;width:85%" src="/images/abstraction.png"></a>
     <figcaption>Christoph Niemann explaining realism, abstraction and just right in the Netflix Series - <a href="https://www.netflix.com/in/title/80057883">"Abstract: The Art of Design".</a></figcaption>
 </figure>
 
